@@ -1,0 +1,36 @@
+.app-header {
+  background-color: #eeeeee;
+  height: 100px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+
+  .app-header__content {
+    vertical-align: bottom;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+
+    .app-header__previous-page-btn {
+      display: block;
+      float: left;
+      margin-top: 50px;
+      cursor: pointer;
+
+      p {
+        color: #007aff;
+      }
+    }
+
+    .app-header__header-title {
+      display: block;
+      height: 50px;
+      margin-top: 50px;
+
+      p {
+        padding-top: 16px;
+      }
+    }
+  }
+}

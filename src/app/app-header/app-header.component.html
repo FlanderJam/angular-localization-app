@@ -1,0 +1,35 @@
+<header class="app-header">
+  <div class="app-header__content">
+    <div>
+      <div
+        class="app-header__previous-page-btn"
+        *ngIf="selectedRoute !== '/select-language'"
+        (click)="onClickNavigateToPrevious()"
+      >
+        <p *ngIf="selectedRoute === '/page-one'">
+          <span><fa-icon [icon]="faAngleLeft"></fa-icon></span>
+          Select Language
+        </p>
+        <p *ngIf="selectedRoute === '/page-two'">
+          <span><fa-icon [icon]="faAngleLeft"></fa-icon></span>
+          Demo Title
+        </p>
+      </div>
+    </div>
+    <div>
+      <div class="app-header__header-title">
+        <p *ngIf="selectedRoute === '/select-language'">
+          Language Selection
+        </p>
+        <p *ngIf="selectedRoute === '/page-one'">
+          Demo Title
+        </p>
+        <p *ngIf="selectedRoute === '/page-two'">
+          Second Page
+        </p>
+      </div>
+    </div>
+    <div></div>
+  </div>
+</header>
+<hr class="app-hr" />

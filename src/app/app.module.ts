@@ -7,6 +7,8 @@ import { AppLanguageSelectComponent } from './app-language-select/app-language-s
 import { AppPageOneComponent } from './app-page-one/app-page-one.component';
 import { AppPageTwoComponent } from './app-page-two/app-page-two.component';
 import { Routes, RouterModule } from '@angular/router';
+import { AppHeaderComponent } from './app-header/app-header.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 const appRoutes: Routes = [
   { path: 'page-one', component: AppPageOneComponent },
@@ -20,17 +22,19 @@ const appRoutes: Routes = [
     AppComponent,
     AppLanguageSelectComponent,
     AppPageOneComponent,
-    AppPageTwoComponent
+    AppPageTwoComponent,
+    AppHeaderComponent
   ],
   imports: [
     RouterModule.forRoot(
-      appRoutes,
+      appRoutes
       // { enableTracing: true }
     ),
     BrowserModule,
     AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
