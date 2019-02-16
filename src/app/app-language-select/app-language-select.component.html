@@ -1,0 +1,17 @@
+<main>
+  <header class="app-language-select__header">
+    <div class="app-language-select__header-text">
+      <p>
+        Language Selection
+      </p>
+    </div>
+  </header>
+  <hr class="app-language-select__hr">
+  <section>
+    <div class="app-language-select__language-option" *ngFor="let language of languageList"
+      (click)="onClickLanguage(language)">
+      <p>{{language}}</p>
+      <hr class="app-language-select__hr">
+    </div>
+  </section>
+</main>
