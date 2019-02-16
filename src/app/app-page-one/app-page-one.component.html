@@ -1,3 +1,77 @@
-<p>
-  app-page-one works!
-</p>
+<main class="app-page-one">
+  <section class="app-page-one__name-section">
+    <div class="name-section__name-input">
+      <label class="text-input-label" for="name-input__first-name"
+        >First Name</label
+      >
+      <input class="text-input" id="name-input__first-name" type="text" />
+    </div>
+    <div class="name-section__name-input">
+      <label class="text-input-label" for="name-input__last-name"
+        >Last Name</label
+      >
+      <input class="text-input" id="name-input__last-name" type="text" />
+    </div>
+  </section>
+  <section class="app-page-one__home-address-section">
+    <div class="home-address-section__title">
+      <p>Home Address</p>
+    </div>
+    <div class="home-address-section__address-input">
+      <input type="text" class="text-input" placeholder="Street Address" />
+    </div>
+    <div class="home-address-section__address-input">
+      <input type="text" class="text-input" placeholder="City" />
+    </div>
+    <div class="home-address-section__address-input">
+      <input type="text" class="text-input" placeholder="Zip Code" />
+    </div>
+    <div class="home-address-section__address-input">
+      <input type="text" class="text-input" placeholder="State" />
+    </div>
+  </section>
+  <section class="app-page-one__work-address-section">
+    <div class="work-address-section__title">
+      <p>Work Address</p>
+    </div>
+    <div class="work-address-section__misc-fields">
+      <p>Given Family</p>
+    </div>
+    <div class="work-address-section__misc-fields">
+      <p>{{ currentTime }}</p>
+    </div>
+    <div class="work-address-section__misc-fields">
+      <p>123.456</p>
+    </div>
+    <div class="work-address-section__address-input">
+      <input type="text" class="text-input" placeholder="Street Address" />
+    </div>
+    <div class="work-address-section__address-input">
+      <input type="text" class="text-input" placeholder="City" />
+    </div>
+    <div class="work-address-section__address-input">
+      <input type="text" class="text-input" placeholder="Zip Code" />
+    </div>
+    <div class="work-address-section__address-input">
+      <input type="text" class="text-input" placeholder="State" />
+    </div>
+  </section>
+  <section class="app-page-one__misc-section">
+    <div class="misc-section__item-count">
+      <p>{{ itemCount }} items</p>
+    </div>
+    <div class="misc-section__book-options">
+      <div class="book-options__book-literature">
+        <p>Book (something you read)</p>
+      </div>
+      <div class="book-options__book-ticket">
+        <p>Book (ticket)</p>
+      </div>
+    </div>
+  </section>
+  <footer class="app-page-one__footer">
+    <div class="footer__next-btn" (click)="onClickNext()">
+      <p>Next</p>
+    </div>
+  </footer>
+</main>

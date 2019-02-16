@@ -1,0 +1,63 @@
+.app-page-one {
+  .app-page-one__name-section,
+  .app-page-one__home-address-section,
+  .app-page-one__work-address-section {
+    margin: 20px 15px 0 15px;
+  }
+
+  .app-page-one__home-address-section,
+  .app-page-one__work-address-section {
+    margin-top: 0;
+    font-weight: bold;
+    text-align: center;
+
+    .home-address-section__title {
+      p {
+        margin: 10px 0;
+      }
+    }
+
+    .work-address-section__title {
+      p {
+        margin: 10px 0;
+      }
+    }
+
+    .work-address-section__misc-fields {
+      text-align: left;
+    }
+  }
+
+  .app-page-one__misc-section {
+    margin-top: 0;
+    font-weight: bold;
+    text-align: center;
+
+    .misc-section__book-options {
+      div {
+        display: inline-block;
+        margin: 0 5px;
+      }
+
+      .book-options__book-ticket {
+        color: #007aff;
+        font-size: 0.85em;
+      }
+    }
+  }
+
+  .app-page-one__footer {
+    margin: 20px 15px 0 15px;
+
+    .footer__next-btn {
+      color: #007aff;
+      cursor: pointer;
+      display: block;
+      float: right;
+    }
+  }
+
+  .name-section__name-input {
+    margin-top: 10px;
+  }
+}
