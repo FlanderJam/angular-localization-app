@@ -1,3 +1,7 @@
+# Purpose of Project
+
+This project was created to test i18n internationalization in Angular 7. The end goal is to have an application that uses JIT compilation and allows a user to select a language and then be present with the app in the chosen language.
+
 # TestLocalization
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
