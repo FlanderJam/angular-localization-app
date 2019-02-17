@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app-page-two.component.scss']
 })
 export class AppPageTwoComponent implements OnInit {
+  public rowOneNumber = 7.312;
+  public rowTwoNumber = 4.205;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
