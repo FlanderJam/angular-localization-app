@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +9,7 @@ import { AppPageTwoComponent } from './app-page-two/app-page-two.component';
 import { Routes, RouterModule } from '@angular/router';
 import { AppHeaderComponent } from './app-header/app-header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AppLanguageService } from './services/app-language-service.service';
 
 const appRoutes: Routes = [
   { path: 'page-one', component: AppPageOneComponent },
@@ -34,7 +35,13 @@ const appRoutes: Routes = [
     AppRoutingModule,
     FontAwesomeModule
   ],
-  providers: [],
+  providers: [
+    AppLanguageService,
+    {
+      provide: LOCALE_ID,
+      useValue: 'en-US'
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

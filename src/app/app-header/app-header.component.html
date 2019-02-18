@@ -6,11 +6,11 @@
         *ngIf="selectedRoute !== '/select-language'"
         (click)="onClickNavigateToPrevious()"
       >
-        <p *ngIf="selectedRoute === '/page-one'">
+        <p i18n="@@language-selection" *ngIf="selectedRoute === '/page-one'">
           <span><fa-icon [icon]="faAngleLeft"></fa-icon></span>
-          Select Language
+          Language Selection
         </p>
-        <p *ngIf="selectedRoute === '/page-two'">
+        <p i18n="@@demo-title" *ngIf="selectedRoute === '/page-two'">
           <span><fa-icon [icon]="faAngleLeft"></fa-icon></span>
           Demo Title
         </p>
@@ -18,13 +18,16 @@
     </div>
     <div>
       <div class="app-header__header-title">
-        <p *ngIf="selectedRoute === '/select-language'">
+        <p
+          i18n="@@language-selection"
+          *ngIf="selectedRoute === '/select-language'"
+        >
           Language Selection
         </p>
-        <p *ngIf="selectedRoute === '/page-one'">
+        <p i18n="@@demo-title" *ngIf="selectedRoute === '/page-one'">
           Demo Title
         </p>
-        <p *ngIf="selectedRoute === '/page-two'">
+        <p i18n="@@second-page" *ngIf="selectedRoute === '/page-two'">
           Second Page
         </p>
       </div>

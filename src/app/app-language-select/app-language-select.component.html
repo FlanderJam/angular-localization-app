@@ -2,8 +2,8 @@
   <section>
     <div
       class="app-language-select__language-option"
-      *ngFor="let language of languageList"
-      (click)="onClickLanguage(language)"
+      *ngFor="let language of languageListKeys"
+      (click)="onClickLanguage(languageList[language])"
     >
       <p>{{ language }}</p>
       <hr class="app-hr" />
